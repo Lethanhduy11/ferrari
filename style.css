@@ -41,23 +41,31 @@
   flex-wrap: wrap;
   margin: 0 auto;
 }
-#content .content__item {
+#content .content__wrapper {
   width: 50%;
   height: 650px;
-  position: relative;
   overflow: hidden;
 }
-#content .content__item .content__img {
+#content .content__wrapper .content__item {
   width: 100%;
   height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
   object-fit: cover;
   transform: scale(1);
   transition: all 1.5s linear;
 }
-#content .content__item .content__img:hover {
+#content .content__wrapper .content__item:hover {
   transform: scale(1.05);
 }
-#content .content__item .content__title {
+#content .content__wrapper .content__item .filter-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+#content .content__wrapper .content__item .content__title {
   position: absolute;
   bottom: 64px;
   left: 50%;

@@ -39,32 +39,41 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  .content__item {
+  .content__wrapper {
     width: 50%;
     height: 650px;
-    position: relative;
     overflow: hidden;
-    .content__img {
+    .content__item {
       width: 100%;
       height: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
       object-fit: cover;
       transform: scale(1);
       transition: all 1.5s linear;
       &:hover {
         transform: scale(1.05);
       }
-    }
-    .content__title {
-      position: absolute;
-      bottom: 64px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: #fff;
-      text-transform: uppercase;
-      font-size: 36px;
-      text-align: center;
-      letter-spacing: 1px;
-      line-height: 1;
+      .filter-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        // background-color: rgba(#000, 0.5);
+      }
+      .content__title {
+        position: absolute;
+        bottom: 64px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1;
+      }
     }
   }
 }

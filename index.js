@@ -3,7 +3,6 @@ window.addEventListener("load", function () {
   const $ = document.querySelector.bind(document);
   const content = $("#content");
   // slider
-  
 
   // render item
   const contentItems = [
@@ -26,14 +25,16 @@ window.addEventListener("load", function () {
   ];
   contentItems.map((item) => {
     const template = `
-      <div class="content__item">
-                <img src="${item.img}"
-                    alt="" class="content__img">
-                <h3 class="content__title">
-                    ${item.title}
-                </h3>
+    <div class="content__wrapper">
+                <div class="content__item"
+                    style="background-image: url('${item.img}');">
+                    <div class="filter-image"></div>
+                    <h3 class="content__title">
+                        ${item.title}
+                    </h3>
+                </div>
             </div>
-        </div>`;
+      `;
     content.insertAdjacentHTML("beforeend", template);
   });
 });
