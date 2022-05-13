@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#slider {
+  position: relative;
+}
+#slider .slider__img {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://api.ferrari.com/cms/network/medias//resize/627118acb5ab1e422b69766b-ferrari-sp48-unica-gateway-desk-new?apikey=9QscUiwr5n0NhOuQb463QEKghPrVlpaF&width=1920&height=1600");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#slider .slider__title {
+  width: 420px;
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+#story .story__left {
+  width: 50%;
+}
+#story .story__left {
+  width: 50%;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+#content .content__item {
+  width: 50%;
+  height: 650px;
+  position: relative;
+  overflow: hidden;
+}
+#content .content__item .content__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: all 1.5s linear;
+}
+#content .content__item .content__img:hover {
+  transform: scale(1.05);
+}
+#content .content__item .content__title {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
